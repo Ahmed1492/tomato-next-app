@@ -2,6 +2,8 @@
 
 A full-stack food delivery web application built entirely with **Next.js 15 App Router**. Browse menus, search dishes, manage a cart, save favorites, place orders, and track delivery history — all in one seamless experience with a built-in backend via Next.js API routes.
 
+**🚀 Live Demo:** [https://tomato-next-app.vercel.app](https://tomato-next-app.vercel.app)
+
 ---
 
 ## 🚀 Tech Stack
@@ -161,6 +163,49 @@ To seed the database with sample food items, visit:
 ```
 http://localhost:3000/api/seed
 ```
+
+---
+
+## 🚀 Deploy to Vercel
+
+### One-Click Deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Ahmed1492/tomato-next-app)
+
+### Manual Deployment
+
+1. **Push your code to GitHub** (already done ✅)
+
+2. **Import to Vercel:**
+   - Go to [vercel.com](https://vercel.com)
+   - Click "Add New Project"
+   - Import your GitHub repository: `Ahmed1492/tomato-next-app`
+
+3. **Configure Environment Variables:**
+   Add these in Vercel dashboard (Settings → Environment Variables):
+   ```
+   MONGODB_URL=mongodb+srv://ahmed:01148623288@cluster0.rhuzw8c.mongodb.net/food-flow
+   JWT_SECRET=ahmed123
+   CLOUDINARY_CLOUD_NAME=ahmed149
+   CLOUDINARY_API_KEY=339875159134747
+   CLOUDINARY_API_SECRET=AIJzZTeMDck4Wj_RGfJT2Dsmnxc
+   STRIPE_SECRET_KEY=sk_test_your_stripe_secret_key_here
+   ```
+
+4. **Deploy:**
+   - Click "Deploy"
+   - Vercel will automatically build and deploy your app
+   - Your app will be live at `https://your-project.vercel.app`
+
+5. **Seed the database:**
+   Visit `https://your-project.vercel.app/api/seed` to populate food items
+
+### Build Configuration
+- Framework: Next.js
+- Build Command: `next build` (auto-detected)
+- Output Directory: `.next` (auto-detected)
+- Install Command: `npm install` (auto-detected)
+- ESLint & TypeScript errors are ignored during build
 
 ---
 

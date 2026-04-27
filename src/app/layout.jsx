@@ -8,7 +8,16 @@ import ScrollToTop from '@/components/ScrollToTop'
 
 export const metadata = {
   title: 'Food Flow - Order Your Favourite Food',
-  description: 'Order delicious food online with fast delivery.',
+  description: 'Order delicious food online with fast delivery. Browse menus, save favorites, and track your orders.',
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
+  openGraph: {
+    title: 'Food Flow - Order Your Favourite Food',
+    description: 'Order delicious food online with fast delivery.',
+    images: ['/logo.png'],
+  },
 }
 
 export default function RootLayout({ children }) {
